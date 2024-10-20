@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("images/bg-pattern-bottom-desktop.svg");
+    background-size: cover;  
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 1.5rem;
+}
+
+.main-heading {
+    color: hsl(300, 41%, 24%);
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.main-para {
+    color: hsl(300, 43%, 22%);
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.start-info {
+    color: hsl(300, 41%, 24%);
+    font-weight: bold;
+}
+
+.container-one {
+    display: flex;
+    padding: 20px;
+}
+
+.section-one {
+    width: 50%;
+}
+
+.section-two {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+
+.box {
+    display: flex;
+    gap: 10px;
+    background-color: hsl(300, 24%, 96%);
+    width: 35vh;
+    padding: 10px;
+}
+
+.one {
+    align-self: flex-start;
+}
+
+.two {
+    align-self: center;
+}
+
+.three {
+    align-self: flex-end;
+}
+
+.container-two {
+    display: flex;
+    gap: 1.5rem;
+    padding: 20px;
+    height: 250px;
+}
+
+.card {
+    width: 40vh;
+    background-color: hsl(300, 43%, 22%);
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+
+.people {
+    border-radius: 50%;
+    height: 40px;
+}
+
+.img-people {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: hsl(0, 0, 100%);
+}
+
+.img-people span {
+    display: block;
+    color: hsl(333, 80%, 67%);
+}
+
+.img-people p {
+    color: white;
+}
+
+.people-info {
+    color: white;
+    margin-top: 20px;
+}
+
+.card-one {
+    place-self: start;
+}
+
+.card-two {
+    place-self: center;
+}
+
+.card-three {
+    place-self: end;
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .main-heading {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .container-one, .container-two {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .section-one, .section-two {
+        width: 100%;
+        text-align: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
+
+/* Small devices (phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .main-heading {
+        font-size: 2.5rem;
+    }
+
+    .container-one, .container-two {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-one, .section-two {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .main-heading {
+        font-size: 2.5rem;
+    }
+
+    .container-one, .container-two {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section-one, .section-two {
+        width: 100%;
+    }
+
+    .box {
+        width: 40vh;
+    }
+
+    .card {
+        width: 45vh;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .main-heading {
+        font-size: 3rem;
+    }
+
+    .container {
+        gap: 30px;
+    }
+
+    .container-one, .container-two {
+        flex-direction: row;
+    }
+
+    .box {
+        width: 35vh;
+    }
+
+    .card {
+        width: 40vh;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .main-heading {
+        font-size: 3.5rem;
+    }
+
+    .container {
+        gap: 40px;
+    }
+
+    .box {
+        width: 35vh;
+    }
+
+    .card {
+        width: 40vh;
+    }
+}
